@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <header>
+        <span><b>MENU</b></span>
+    </header>
+
+    <form id="cart-form">
+        <div class="product-container">
+            <div class="product-card">
+                <div style="float: left;">
+                    <div class="product-image">
+                    <img src="/Image/product_1.jpg" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-title">CAPPUCCINO</h2>
+                        <p>Cappuccino is an espresso-based coffee drink that is traditionally 
+                            prepared with steamed milk including a layer of milk foam.</p>
+                        <p class="product-price">$19.99</p>
+                        <input type="checkbox" name="product1" value="19.99"> Select
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/Image/product_2.jpg" alt="Product 2">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">FLAT WHITE</h2>
+                    <p>A flat white is a coffee drink consisting of espresso and steamed milk. 
+                        It generally has a higher proportion of espresso to milk than a caffè latte.</p>
+                    <p class="product-price">$14.99</p>
+                    <input type="checkbox" name="product2" value="24.99"> Select
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/Image/product_3.jpg" alt="Product 3">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">CAFE AU LAIT</h2>
+                    <p>Café au lait is coffee with hot milk added. It differs from white coffee, 
+                        which is coffee with cold milk or other whiteners added</p>
+                    <p class="product-price">$20.99</p>
+                    <input type="checkbox" name="product2" value="24.99"> Select
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/Image/product_4.jpg" alt="Product 4">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">TURKISH COFFEE</h2>
+                    <P>Turkish coffee is a style of coffee prepared in a cezve using very 
+                        finely ground coffee beans without filtering.<br><br></P>
+                    <p class="product-price">$18.99</p>
+                    <input type="checkbox" name="product2" value="24.99"> Select
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/Image/product_5.jpg" alt="Product 5">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">MOCHA</h2>
+                    <p>A caffè mocha, also called mocaccino, is a chocolate-flavoured warm 
+                        beverage that is a variant of a caffè latte.</p>
+                    <p class="product-price">$24.99</p>
+                    <input type="checkbox" name="product2" value="24.99"> Select
+                </div>
+            </div>
+
+            <!-- Add more product cards as needed -->
+
+        </div>
+        <br>
+        
+    </form>
+    <button id="addToCart" type="button" onclick="calculateTotal()">Add to Cart</button>
+    <div class="total-section" id="total-section">
+        <h2>Total Amount:</h2>
+        <p id="total-amount">$0.00</p>
+        <button id="checkout" onclick="alert('Order Placed!!!')">Check Out</button>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+body {
+    font-family:Arial Rounded MT Bold;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    min-height: 10vh;
+    overflow-x: hidden;
+    background: linear-gradient(black, black,black, chocolate);
+}
+
+#video-background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000; /* Set the video behind everything */
+}
+
+header {
+    background-image: url('/Image/coffee_cup.png');
+    background-color: #333; /*#6c757d */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 10px;
+    background-position-x: 10px;
+    color: chocolate;              /*#1a612d*/
+    font-family: Algerian;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    position: left,right;
+    z-index: 2; /* Ensure header is on top of the video */
+}
+
+#pi1 {
+    position: absolute;
+    margin: 40% 30%;
+    z-index: -1000;
+    touch-action: cross-slide-x;
+}
+
+nav {
+    background-color: ; /*#343a40*/
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    /* position: sticky; */
+    top: 0;
+    z-index: 1; /* Ensure navigation is on top of the video */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav li :hover {
+    border-bottom: 3px solid white;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+section {
+    margin: 20px;
+    position: relative;
+    z-index: 1; /* Ensure section content is on top of the video */
+}
+
+#about { /* Add specific style for the 'about' section */
+    color: #fff;
+}
+
+h2 {
+    color: beige;
+    font-size: 24px;
+}
+
+p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    color: white;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10%;
+}
+
+.goto {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.goto a {
+    text-decoration: none;
+}
+
+.goto div {
+    color: #fff;
+    background: linear-gradient(black, chocolate);
+    padding: 40px;
+    font-size: 1.1em;
+    font-weight: 300;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid chocolate;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.goto div:hover {
+    background: linear-gradient(chocolate, black);
+    transform: translateY(-20px);
+}

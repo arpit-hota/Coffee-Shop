@@ -1,0 +1,106 @@
+body {
+    background-color: black;
+    font-family:Arial Rounded MT Bold;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('coffee_cup.png');
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 10px;
+    background-position-x: 10px;
+    color: chocolate;              /*#1a612d*/
+    font-family: Algerian;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    position: left,right;
+    z-index: 1; /* Ensure header is on top of the video */
+}
+
+nav {
+    background-color: ; /*#343a40*/
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    position: relative;
+    z-index: 1; /* Ensure navigation is on top of the video */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+section {
+    margin: 20px;
+    position: relative;
+    z-index: 1; /* Ensure section content is on top of the video */
+}
+
+#about { /* Add specific style for the 'about' section */
+    color: #fff;
+}
+
+.login{
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+}
+
+#log{
+    text-align: center;
+}
+
+#log_data{
+    background-color: #333;
+    width: 650px;
+    position: relative;
+    margin: auto;
+}
+
+#body{
+    padding-bottom: 5px;
+}
+
+#log_button{
+    background-color: darkred;
+    color: #fff;
+    margin-left: 325px; 
+    width:150px; 
+    height: 30px;
+}
+
+footer {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 98.8%;
+    position: left,right;
+    position: absolute;
+    bottom: 0;
+/*    z-index: -1;  Ensure footer is on top of the video */
+}

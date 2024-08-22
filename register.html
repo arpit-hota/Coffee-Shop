@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+	<link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+	<div id="body">
+		<header>
+        	<h1>Brwish Coffee</h1>
+    	</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html" style="font-family:Agency FB">Home</a></li>
+				<li><a href="about.html" style="font-family:Agency FB">About</a></li>
+				<li><a href="menu.html" style="font-family:Agency FB">Menu</a></li>
+			</ul>
+		</nav>
+		<div class="registration">
+			<div>
+				<h1 id="regi">
+					Register
+				</h1>
+				<form>
+					<div id="reg_data">
+					
+						<p style="margin-bottom: 4px;"><b>Name:</b></p>  
+						<input type="text" id="name" placeholder="First Name" style="width: 200px; height: 30px;">
+						<input type="text" id="name" placeholder="Middle Name" style="width: 200px; height: 30px;">
+						<input type="text" id="name" placeholder="Last Name" style="width: 200px; height: 30px;">
+						<p style="margin-bottom: 4px;"><b>Birth Date:</b></p>
+						<input type="Date" id="birth_date" style="width: 200px; height: 30px;">
+						<p style="margin-bottom: 4px;"><b>Gender:</b></p>
+						<input type="radio"  name="user_gender"> Male 
+						<input type="radio"  name="user_gender"> Female
+						<p></p>
+						<div style="display: inline;">
+							<p style="margin-bottom: 4px; margin-right: 250px; display: inline;"><b>Phone No.:</b></p> 
+							<p style="margin-bottom: 4px; display: inline;"><b>Email ID:</b></p>	
+						</div>
+						<div style="display: inline;">
+							<input type="integer" placeholder="Ex: 9745265" style="width: 200px; height: 30px; margin-right: 138px;">
+							<input type="text" placeholder="Ex: abc@gail.com" style="width: 200px; height: 30px;">
+						</div>
+						<p></p>
+						<p style="margin-bottom: 4px;"><b>Address:</b></p>
+						<input type="text" placeholder="Area, city, state, ..." style="width: 500px; height: 30px;">
+						<p></p>
+						<div style="display: inline;">
+							<p style="margin-bottom: 4px; margin-right: 250px; display: inline;"><b>Password:</b></p> 
+							<p style="margin-bottom: 4px; display: inline;"><b>Confirm Password:</b></p>	
+						</div>
+						<div style="display: inline;">
+							<input type="password" placeholder="Ex: 123!#@abc" style="width: 200px; height: 30px; margin-right: 138px;">
+							<input type="password" placeholder="Ex: 123!#@abc" style="width: 200px; height: 30px;">
+						</div>
+						<p></p>
+					</div>
+				</form>
+				<br>
+				<button id="submit">Submit</button>
+			</div>
+			<a href="login.html" class="redirect-login">Already registered so login</a>
+		</div>   
+	</div>
+	
+</body>
+<footer>
+        <p>Copyright @ Arpit. Made by an enthusiast Web Developer!!!</p>
+</footer>
+</html>
